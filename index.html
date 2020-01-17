@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>To Do App</title>
+</head>
+<body>
+
+    <div id="todo-app">
+        <h1>ToDo Application</h1>
+        <div class="wrap">
+            <label>
+                Task:
+                <input type="text" placeholder=" just write here ...">
+            </label>
+            
+
+            <ul id="spisok">
+
+            </ul>
+
+            <div class="btns">
+                <button id="save">save all</button>
+                <button id="clear">clear</button>
+                <button id="about">about developer</button>
+            </div>            
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+<!--  
+Реализовать To-do приложение со следующим функционалом:
+
+    + Нужно чтобы после добавления задачи добавлялась не только задача,
+        но и дата добавления.
+
+    + Сделать проверку на то чтобы пустое поле ввода нельзя было добавить
+        как задачу
+    
+    + Добавить кнопку “информация о себе”, при нажатии на которую
+        откроется модальное окно с информацией(ФИО разработчика)
+
+    + Если задача добавлена, сделать так чтобы при нажатии на текст
+        задачи она могла быть зачеркнута(выполнена)
+
+    - добавить CSS-стилей в ваше приложение c применением Flexbox.
+
+    - переделать под scss;
+
+    - event.stopPropagation(); - read more
+-->
