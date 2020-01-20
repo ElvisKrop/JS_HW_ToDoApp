@@ -1,0 +1,128 @@
+/*RESET.CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*END RESET.CSS*/
+body {
+  background-image: url("../img/wall.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+}
+
+#todo-app {
+  background: #99cd32cc;
+  width: 80%;
+  margin: 50px auto 0;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 30px;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 0 20px #99cd32;
+          box-shadow: 0 0 20px #99cd32;
+}
+
+#todo-app .wrap {
+  margin: 50px;
+}
+
+#todo-app .wrap .btns {
+  text-align: center;
+}
+
+#todo-app h1 {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Lucida Grande', sans-serif;
+  color: #054b33;
+}
+
+#spisok {
+  min-height: 300px;
+}
+
+#spisok li {
+  margin: 15px 0;
+}
+
+#spisok li span {
+  padding: 3px;
+  color: brown;
+  border: 1px solid brown;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+#spisok li span:hover {
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+button {
+  background: #99cd32;
+  border: 2px solid #99cd32;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  color: #054b33;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #054b33;
+          box-shadow: 0 0 5px #054b33;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}

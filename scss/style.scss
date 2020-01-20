@@ -1,0 +1,63 @@
+@import 'restyle';
+
+body {
+    background-image: url('../img/wall.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+#todo-app {
+    background: #99cd32cc;
+    width: 80%;
+    margin: 50px auto 0;
+    font-family: 'Courier New', Courier, monospace; 
+    padding: 30px;
+    border-radius: 40px;
+    box-shadow: 0 0 20px #99cd32;
+    .wrap {
+        margin: 50px;
+        .btns {
+            text-align: center;
+        }
+    }
+    h1 {
+        font-size: 50px;
+        text-align: center;
+        font-family: 'Lucida Grande', sans-serif;
+        color: #054b33;
+    }
+}
+
+#spisok {
+    min-height: 300px;
+    li {
+        margin: 15px 0;
+        span {
+            padding: 3px;
+            color: brown;
+            border: 1px solid brown;
+            margin-right: 10px;
+            border-radius: 5px;
+            &:hover {
+                cursor: pointer;
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+button {
+    background: #99cd32;
+    border: 2px solid #99cd32;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    color: #054b33;
+    border-radius: 5px;
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 5px #054b33;
+        transition-duration: 0.3s;
+    }
+}
