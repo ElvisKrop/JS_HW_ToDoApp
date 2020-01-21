@@ -75,10 +75,18 @@ body {
 
 #todo-app .wrap {
   margin: 50px;
+  text-align: center;
 }
 
-#todo-app .wrap .btns {
-  text-align: center;
+#todo-app .wrap label {
+  font-size: 30px;
+}
+
+#todo-app .wrap label input[type="text"] {
+  font-size: inherit;
+  width: 30%;
+  background: transparent;
+  border: none;
 }
 
 #todo-app h1 {
@@ -90,17 +98,34 @@ body {
 
 #spisok {
   min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #spisok li {
-  margin: 15px 0;
+  margin: 10px;
+  width: 30%;
+  max-height: 120px;
+  -webkit-box-shadow: 0 0 10px #ffffff;
+          box-shadow: 0 0 10px #ffffff;
+  border-radius: 10px;
+  padding: 5px 0;
+  line-height: 30px;
+  font-weight: 600;
 }
 
 #spisok li span {
+  font-weight: lighter;
   padding: 3px;
   color: brown;
   border: 1px solid brown;
-  margin-right: 10px;
+  margin: 0 5px;
   border-radius: 5px;
 }
 

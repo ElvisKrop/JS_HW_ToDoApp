@@ -17,9 +17,17 @@ body {
     box-shadow: 0 0 20px #99cd32;
     .wrap {
         margin: 50px;
-        .btns {
-            text-align: center;
+        text-align: center;
+        label {
+            font-size: 30px;
+            input[type="text"] {
+                font-size: inherit;
+                width: 30%;
+                background: transparent;
+                border: none;
+            }
         }
+        
     }
     h1 {
         font-size: 50px;
@@ -31,13 +39,25 @@ body {
 
 #spisok {
     min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
     li {
-        margin: 15px 0;
+        margin: 10px;
+        width: 30%;
+        max-height: 120px;
+        box-shadow: 0 0 10px #ffffff;
+        border-radius: 10px;
+        padding: 5px 0;
+        line-height: 30px;
+        font-weight: 600;
         span {
+            font-weight: lighter;
             padding: 3px;
             color: brown;
             border: 1px solid brown;
-            margin-right: 10px;
+            margin: 0 5px;
             border-radius: 5px;
             &:hover {
                 cursor: pointer;
