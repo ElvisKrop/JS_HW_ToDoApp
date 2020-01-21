@@ -4,7 +4,8 @@ let inputData = document.querySelector("input[type='text']"),
     eachLi = document.getElementsByTagName("li"),
     saveBtn = document.getElementById("save"),
     clearBtn = document.getElementById("clear"),
-    aboutBtn = document.getElementById("about");
+    aboutBtn = document.getElementById("about"),
+    aboutBox = document.getElementById("about_box");
 
 function deleteTodo() {
     for(let span of spans) {
@@ -29,6 +30,12 @@ function loadTodo() {
         ulSpisok.innerHTML = localStorage.getItem('todolist');
     }
     deleteTodo();
+}
+
+function closeAboutBox() {
+    aboutBox.addEventListener('click', () => {
+        aboutBox.classList.remove('show-info');
+    });
 }
 
 inputData.addEventListener('keypress', function(keyPressed) {
@@ -59,9 +66,11 @@ clearBtn.addEventListener('click', function() {
     localStorage.setItem('todolist', ulSpisok.innerHTML);
 });
 
-aboutBtn.addEventListener('click', () =>
-    alert('You can call me Nikita Zasimuk.'));
+aboutBtn.addEventListener('click', () => {
+    aboutBox.classList.add("show-info");
+});
 
 deleteTodo();
 lineThrough();
 loadTodo();
+closeAboutBox();
