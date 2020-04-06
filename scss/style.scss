@@ -1,19 +1,19 @@
-@import 'restyle';
+@import "restyle";
 
 body {
-    background-image: url('../img/wall.jpg');
+    background-image: url("https://images.unsplash.com/photo-1567376832261-e660f592a007?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    // height: 90vh;
 }
 
 #todo-app {
-    background: #99cd32cc;
+    background: #ffffffcc;
     width: 80%;
     margin: 50px auto 0;
-    font-family: 'Courier New', Courier, monospace; 
+    font-family: "Courier New", Courier, monospace;
     padding: 30px;
-    border-radius: 40px;
+    border-radius: 10px;
     box-shadow: 0 0 20px #99cd32;
     .wrap {
         margin: 50px;
@@ -27,12 +27,11 @@ body {
                 border: none;
             }
         }
-        
     }
     h1 {
         font-size: 50px;
         text-align: center;
-        font-family: 'Lucida Grande', sans-serif;
+        font-family: "Lucida Grande", sans-serif;
         color: #054b33;
     }
 }
@@ -44,25 +43,26 @@ body {
     margin: 0 auto;
     justify-content: space-around;
     li {
-        margin: 10px;
         width: 30%;
-        max-height: 120px;
-        box-shadow: 0 0 10px #ffffff;
-        border-radius: 10px;
-        padding: 5px;
-        line-height: 30px;
         font-weight: 600;
         text-align: left;
+        max-height: 120px;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        line-height: 30px;
+        box-shadow: 0 0 10px #ffffff;
+        background-color: #99cd32be;
         span {
             font-weight: lighter;
-            padding: 3px;
+            padding: 5px;
             color: brown;
             border: 1px solid brown;
             margin-right: 5px;
             border-radius: 5px;
+            top: 50%;
             &:hover {
                 cursor: pointer;
-                font-weight: bolder;
             }
         }
     }
@@ -84,22 +84,24 @@ button {
 }
 
 .about_box {
-    top: -100%;
     position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-color: #ffffff33;
+    height: 100vh;
     transition-duration: 2s;
+    z-index: -1;
+    opacity: 0;
+    background: linear-gradient(to right bottom, #ffffff85, #afafaf);
     .window_box {
         padding: 30px 0;
-        border-radius: 40px;
+        border-radius: 10px;
         width: 50%;
         margin: 35vh auto 0;
         text-align: center;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: "Courier New", Courier, monospace;
         font-weight: 600;
-        background: linear-gradient(to right bottom, #ffffff1a, #ffffff4d);
+        background: linear-gradient(to right bottom, #ffffff, #afafaf);
         h2 {
             font-size: larger;
         }
@@ -121,7 +123,7 @@ button {
         .close-text {
             display: inline-block;
             height: 0px;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: "Courier New", Courier, monospace;
             font-size: smaller;
             padding-right: 40px;
         }
@@ -129,5 +131,6 @@ button {
 }
 
 .show-info {
-    top: 0;
+    z-index: 1;
+    opacity: 1;
 }
